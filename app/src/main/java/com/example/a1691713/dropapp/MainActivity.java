@@ -38,15 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         int SelectedPosition=mydropdown.getSelectedItemPosition();
 
-        switch (SelectedPosition){
-            case 0:
-                Intent myIntent1=new Intent(this,Main2Activity.class);
-
-                EditText input1=(EditText)findViewById(R.id.input1);
-                input1.setVisibility(View.INVISIBLE);
-                startActivity(myIntent);
-
-        }
+        
         if (SelectedPosition==0){
             EditText input1=(EditText)findViewById(R.id.input1);
             input1.setVisibility(View.INVISIBLE);
