@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Spinner mydropdown=(Spinner)findViewById(R.id.dropdown);
 
-        String[] names={"Circle","Triangle","Square","Rectangle"};
+        String[] names={"Circle","Triangle","Square","Rectangle","Parallelogram","Trapezoid","Sector","Ellipse"};
         ArrayAdapter<String> myadapter= new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,names);
 
 
@@ -36,14 +36,10 @@ public class MainActivity extends AppCompatActivity {
         String value1=mydropdown.getSelectedItem().toString();
         myIntent.putExtra("name",value1);
 
-        int SelectedPosition=mydropdown.getSelectedItemPosition();
-
-        
-        if (SelectedPosition==0){
-            EditText input1=(EditText)findViewById(R.id.input1);
-            input1.setVisibility(View.INVISIBLE);
-            startActivity(myIntent);
-        }
+        //int SelectedPosition=mydropdown.getSelectedItemPosition();
+      //  if (mydropdown.getSelectedItem().toString().equals("age")){
+      //      ;
+      //  }
 
 
         startActivity(myIntent);
